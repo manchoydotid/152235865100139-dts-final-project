@@ -15,12 +15,14 @@ function Navbar() {
     <div className="navbar">
       <div className="container">
         <div className="left">
-          <img src="../logo-masak.png" alt="Masakan" />
+          <img
+            src="https://img.icons8.com/color/48/000000/sunny-side-up-eggs.png"
+            alt="recipe logo"
+          />
         </div>
-        <div className="right">Login</div>
-        <button className="right" onClick={buttonLogoutClickHandler}>
+        <div className="button right" onClick={buttonLogoutClickHandler}>
           Logout
-        </button>
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./ListRecipes.css";
 import CardRecipe from "../components/CardRecipe.jsx";
-import Error from "../components/Error";
 
 function ListRecipes(props) {
   const [recipes, setRecipes] = useState([]);
@@ -17,7 +16,7 @@ function ListRecipes(props) {
       }
     };
     fetchDataRecipes();
-  }, []);
+  });
 
   return (
     <div className="boxy">
