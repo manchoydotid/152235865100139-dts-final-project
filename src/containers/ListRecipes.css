@@ -1,0 +1,17 @@
+.boxy {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding: 2.5em 2.5em 0 2.5em;
+}
+.recipe-group-title {
+  text-align: left;
+  margin-bottom: 1em;
+}
+.list-recipe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 768px;
+  margin: 0 auto;
+}

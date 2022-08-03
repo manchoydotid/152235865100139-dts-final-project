@@ -1,0 +1,44 @@
+.navbar {
+  width: 100%;
+  background-color: rgb(249, 137, 137);
+  color: #fff;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+}
+.navbar .container {
+  width: 768px;
+  padding: 0px 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  text-align: center;
+}
+.navbar .container .left {
+  display: flex;
+  align-items: center;
+}
+.navbar .container .left img {
+  height: 44px;
+  margin-right: 40px;
+}
+.navbar .container .left span {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.navbar .container .right {
+  display: flex;
+  align-items: center;
+}
+.navbar .container .right img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.navbar .container .right span {
+  margin-right: 20px;
+  cursor: pointer;
+}
