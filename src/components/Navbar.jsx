@@ -18,6 +18,14 @@ function Navbar() {
       <div className="container">
         <div className="left">
           <img src="../sunny-side-up-eggs.png" alt="recipe logo" />
+          <div
+            className="button"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            Home
+          </div>
         </div>
         <div className="button right" onClick={buttonLogoutClickHandler}>
           {!user ? "Login" : "Logout"}

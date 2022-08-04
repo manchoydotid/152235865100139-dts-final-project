@@ -16,12 +16,13 @@ function ListRecipes(props) {
       }
     };
     fetchDataRecipes();
-  });
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <div className="boxy">
       <div className="list-recipe">
-        {recipes.slice(3).map((recipe) => {
+        {recipes.slice(6).map((recipe) => {
           return <CardRecipe key={recipe.idMeal} propsRecipe={recipe} />;
         })}
       </div>

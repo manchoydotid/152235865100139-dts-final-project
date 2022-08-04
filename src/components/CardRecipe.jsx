@@ -1,9 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./CardRecipe.css";
 
 const CardMovie = ({ propsRecipe }) => {
+  const navigate = useNavigate();
   return (
-    <div className="recipe-card">
+    <div
+      className="recipe-card"
+      onClick={() => {
+        navigate(`/recipes/${propsRecipe.idMeal}`);
+      }}
+    >
       <figure>
         <img src={propsRecipe.strMealThumb} alt={propsRecipe.strMeal} />
       </figure>
