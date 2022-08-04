@@ -10,7 +10,7 @@ function Navbar() {
 
   const buttonLogoutClickHandler = async () => {
     await keluarDariAplikasi();
-    navigate("/login");
+    navigate("/");
   };
 
   return (
